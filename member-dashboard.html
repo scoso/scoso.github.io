@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Harvard Pilgrim Health Care | Dashboard</title>
+	    <link rel='shortcut icon' href='apple-touch-icon.ico' type='image/x-icon'/ >
+	    <link rel="apple-touch-icon" href="./_img/apple-touch-icon_60.png">
+			<link rel="apple-touch-icon" sizes="76x76" href="./_img/apple-touch-icon_76.png">
+			<link rel="apple-touch-icon" sizes="120x120" href="./_img/apple-touch-icon_120.png">
+			<link rel="apple-touch-icon" sizes="152x152" href="./_img/apple-touch-icon_152.png">
+	    <link rel="stylesheet" href="./_css/_vendors/normalize.css">
+	    <link rel="stylesheet" href="./_css/_vendors/jquery-ui.min.css">
+	    <link rel="stylesheet" href="./_css/_vendors/select2/select2.min.css">
+	    <link rel="stylesheet" href="./_css/style.min.css">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<h1 class="skip-link"><a href="#maincontent">Skip to main content</a></h1>
+
+		<div class="hphc-wrap_page">
+
+			<nav class="logged-in" role="navigation" aria-label="Logged in Navigation - Global links">
+				<div class="hphc-main_nav"> <!-- Main Nav Bar -->
+					<a href="./find-a-provider/">Find A Provider</a>
+					<a href="#">Contact</a>
+					<a href="#">About Us</a>
+					<a href="#">Help</a>
+					<div class="search-container">
+						<form class="searchbox">
+							<input type="text" placeholder="Type to search..." name="search" class="searchbox-input">
+							<input type="submit" class="searchbox-submit" value="GO">
+						</form>
+					</div>
+					<a href="#" id="search-bar" class="icon-l search" role="button"><span class='screen-reader-text'>Search website</span></a>
+					<div class="red-box">
+						<a href="#">My Account</a>
+						<a class="hphc-btn_primary logout" href="./member-login.html">Logout</a>
+					</div>
+				</div>
+				<div class="hphc-sub_nav"> <!-- Sub Nav Bar -->
+						<div class="mobile_nav"> <!-- Mobile Nav -->
+							<a href="#" role="button" id="show-menu">Menu<span></span></a>
+							<div class="mobile_menu hide">
+								<div>
+									<a class="selected" href="./member-dashboard.html">Dashboard</a>
+									<a href="./plan-details/">Plan Details</a>
+									<a href="./classes-programs/">Classes &amp; Programs</a>
+									<a href="./conditions-coverages/">Conditions &amp; Coverage</a>
+									<a href="./discounts-savings/">Discounts &amp; Savings</a>
+								</div>
+								<div>
+									<a href="./find-a-provider/">Find A Provider</a>
+									<a href="#">Contact</a>
+									<a href="#">About Us</a>
+									<a href="#">Help</a>
+									<a href="#">My Account</a>
+									<a href="../member-login.html" class="logout">Logout</a>
+								</div>
+							</div>
+							<a href="./member-dashboard.html" class="hphc-logo"><img src="./_img/HPHC_logo.svg" alt="Harvard Pilgrim Health Care logo"/></a>
+							<a href="#" id="show-search" class="icon-l search" role="button"><span class='screen-reader-text'>Search website</span></a>
+							<div id="mobile_search" class="hide">
+								<form class="mobile_searchbox">
+									<input type="text" placeholder="Type to search..." name="search" class="mobile_searchbox-input">
+									<input type="submit" class="mobile_searchbox-submit">
+								</form>
+							</div>
+						</div>
+						<a href="./member-dashboard.html" class="hphc-logo"><img src="./_img/HPHC_logo.svg" alt="Harvard Pilgrim Health Care logo"/></a>
+						<div>
+							<p>Welcome Back<a role="presentation">Michelle</a></p>
+							<p>Your Current Plan<a role="presentation">HMO Best Buy Plan</a></p>
+							<p>HPHC Member ID<a role="presentation">657342008</a></p>
+						</div>
+				</div>
+				<div class="hphc-member_nav"> <!-- Member Nav Bar -->
+						<div>
+							<a class="selected" href="./member-dashboard.html">Dashboard</a>
+							<a href="./plan-details/">Plan Details</a>
+							<a href="./classes-programs/">Classes &amp; Programs</a>
+							<a href="./conditions-coverages/">Conditions &amp; Coverage</a>
+							<a href="./discounts-savings/">Discounts &amp; Savings</a>
+						</div>
+				</div>
+			</nav>
+
+			<main role="main" id="maincontent">
+				<div class="hphc-header dashboard">
+		      <div class="background-wrapper">
+		        <h1 class="title"><span class="screen-reader-text">Dashboard: </span>Welcome Michelle</h1>
+		        <div>
+		        	<a href="#" class="label icon-l email">3 new messages</a>
+		        	<a href="#" class="hphc-btn_tertiary">Submit a claim</a>
+		        </div>
+		      </div>
+		    </div>
+			
+				<section class="hphc-snapshot--member">
+					<div>
+						<div>
+							<p class="small" role="heading">Your Current Plan</p>
+							<h4>Best Buy HSA HMO</h4>
+							<p class="mobile_show"><strong>Member ID:</strong> 657342008</p>
+							<p>Jan 1 2016 - Dec 31 2016</p>
+							<a href="#" class="standalone icon-r arrow-r">Your plan benefits &amp; ID card</a>
+						</div>
+						<div>
+							<p class="small" role="heading">Provider Information</p>
+							<p>Your PCP: <a href="./find-a-provider/dr-joe-cornish-detail.html">Dr Nancy Drew</a></p>
+							<p>Jim's PCP: <a href="./find-a-provider/dr-joe-cornish-detail.html">Dr Jow Hill</a></p>
+							<p>George's pediatrician: <a href="./find-a-provider/dr-joe-cornish-detail.html">Dr Frank Little</a></p>
+							<a href="#" class="standalone icon-r arrow-r">Manage Providers</a>
+						</div>
+					</div>
+					<div>
+						<p class="small" role="heading">Top Tasks</p>
+						<p><a href="./find-a-provider/">Find providers &amp; facilities</a></p>
+						<p><a href="./discounts-savings/pharmacy-benefits.html">Prescription drug tiers and lookup</a></p>
+						<p><a href="#">Compare costs with Now iKnow</a></p>
+						<p><a href="#">Fill out tax and claim forms</a></p>
+						<p><a href="#">Order a new ID card</a></p>
+						<p><a href="#">Manage my account</a></p>
+					</div>
+				</section>
+
+				<section class="hphc-recent_activity">
+						<div class="activity-summary">
+							<h3>Recent Activity</h3>
+							<div>
+								<p>This is a list of only your most recent claims, authorization and referral activity. Visit <a href="#">HPH Connect</a> to see <strong>all</strong> activity and other powerful tools that help you take charge of your plan.</p>
+								<a href="#" class="hphc-btn_tertiary icon-l external red">Open HPHConnect</a>
+							</div>
+						</div>
+						<div class="hphc-activity_filter">
+								<button id="filter" class="hphc-btn_minimal mobile_show ">Filter</button>
+								<div class="hphc-filter_menu">
+									<div class="filter-header">
+										<h2>Filter</h2>
+										<div>
+											<button class="hphc-btn_secondary" id="clear">Clear</button>
+											<button class="hphc-btn_primary" id="apply">Apply</button>
+										</div>
+									</div>
+									<div class="hphc-activity_filter">
+										<form action="#">
+											<legend for="filter">Filter current view:</legend>
+											<div>
+												<div class="hphc-checkbox">
+													<input type="checkbox" id="claims" name="activityType" value="Claims" />
+													<label for="claims">Claims</label>
+												</div>
+												<div class="hphc-checkbox">
+													<input type="checkbox" id="referrals" name="activityType" value="Referrals" />
+													<label for="referrals">Referrals</label>
+												</div>
+												<div class="hphc-checkbox">
+													<input type="checkbox" id="authorizations" name="activityType" value="Authorizations" />
+													<label for="authorizations">Pharmacy</label>
+												</div>
+											</div>
+											<div class="hphc-select">
+												<select name="sort" id="sort">
+													<option value="All family members">All family members</option>
+													<option value="Myself">Me</option>
+													<option value="Jim">Jim</option>
+													<option value="George">George</option>
+												</select>
+											</div>
+										</form>
+									</div>
+							</div>	
+							<form action="#" class="mobile_hide">
+								<legend for="filter">Filter current view:</legend>
+								<div>
+									<div class="hphc-checkbox">
+										<input type="checkbox" id="claims" name="activityType" value="Claims" />
+										<label for="claims">Claims</label>
+									</div>
+									<div class="hphc-checkbox">
+										<input type="checkbox" id="referrals" name="activityType" value="Referrals" />
+										<label for="referrals">Referrals</label>
+									</div>
+									<div class="hphc-checkbox">
+										<input type="checkbox" id="authorizations" name="activityType" value="Authorizations" />
+										<label for="authorizations">Pharmacy</label>
+									</div>
+								</div>
+								<div class="hphc-select">
+									<select name="sort" id="sort">
+										<option value="All family members">All family members</option>
+										<option value="Myself">Me</option>
+										<option value="Jim">Jim</option>
+										<option value="George">George</option>
+									</select>
+								</div>
+							</form>
+						</div>
+						<div class="hphc-activity_card-wrapper">
+							<div class="hphc-activity_card action">
+								<div class="status-bar">
+									<p>Action needed</p>
+									<p>Claim</p>
+								</div>
+								<div class="activity-review">
+									<p class="bold">George</p>
+									<h4><a href="#">Portsmouth Regional Urgent Care</a></h4>
+									<div class="claim-info">
+										<p><strong>Service:</strong> Nov 24, 2015</p>
+										<p><strong>Claim Total:</strong> $300</p>
+									</div>
+								</div>
+								<div class="claim-note">
+									<p>We need further information before we can settle this claim.<a href="#" class="standalone icon-r arrow-r">Please fill in a Coordination of Benefits form</a></p>
+								</div>
+							</div>
+							<div class="hphc-activity_card complete">
+								<div class="status-bar">
+									<p>Complete</p>
+									<p>Claim</p>
+								</div>
+								<div class="activity-review">
+									<p class="bold">Jim</p>
+									<h4><a href="#">Families First PCP</a></h4>
+									<div class="claim-info">
+										<p><strong>Service:</strong> Oct 24, 2015</p>
+										<p><strong>Copay:</strong> $25</p>
+									</div>
+								</div>
+								<div class="claim-note">
+									<p>You do not owe any additional payments.</p>
+								</div>
+							</div>
+							<div class="hphc-activity_card complete">
+								<div class="status-bar">
+									<p>Complete</p>
+									<p>Claim</p>
+								</div>
+								<div class="activity-review">
+									<p class="bold">Joanne</p>
+									<h4><a href="#">Lahey Physio Department</a></h4>
+									<div class="claim-info">
+										<p><strong>Service:</strong> Nov 24, 2015</p>
+										<p><strong>Claim Total:</strong> $300</p>
+									</div>
+								</div>
+								<div class="claim-note">
+									<p>Provider is out of network. For more info, start a <a href="#">LiveChat with Member Services.</a></p>
+								</div>
+							</div>
+							<div class="hphc-activity_card complete">
+								<div class="status-bar">
+									<p>Complete</p>
+									<p>Pharmacy</p>
+								</div>
+								<div class="activity-review">
+									<p class="bold">Jim</p>
+									<h4><a href="#">CVS 800 Islington</a></h4>
+									<div class="claim-info">
+										<p><strong>Service:</strong> Oct 24, 2015</p>
+										<p><strong>Copay:</strong> $25</p>
+									</div>
+								</div>
+								<div class="claim-note">
+									<p>You do not owe any additional payments.</p>
+								</div>
+							</div>
+							<div class="hphc-activity_card received">
+								<div class="status-bar">
+									<p>Received</p>
+									<p>Referral</p>
+								</div>
+								<div class="activity-review">
+									<p class="bold">Joanne</p>
+									<h4><a href="#">Lahey Opthalmology</a></h4>
+									<div class="claim-info">
+										<p><strong>Submitted:</strong> Nov 24, 2015</p>
+									</div>
+								</div>
+								<div class="claim-note">
+									<p>Authorization submitted by Dr. Nancy Drew.</p>
+								</div>
+							</div>
+							<div class="hphc-activity_card progress">
+								<div class="status-bar">
+									<p>In Progress</p>
+									<p>Claim</p>
+								</div>
+								<div class="activity-review">
+									<p class="bold">Joanne</p>
+									<h4><a href="#">Lahey Physio Department</a></h4>
+									<div class="claim-info">
+										<p><strong>Service:</strong> Nov 24, 2015</p>
+										<p><strong>Claim Total:</strong> $300</p>
+									</div>
+								</div>
+								<div class="claim-note">
+									<p>Provider is out of network. For more info, start a <a href="#">LiveChat with Member Services.</a></p>
+								</div>
+							</div>
+							<div class="hphc-activity_card action hide">
+								<div class="status-bar">
+									<p>Action needed</p>
+									<p>Claim</p>
+								</div>
+								<div class="activity-review">
+									<p class="bold">George</p>
+									<h4><a href="#">Portsmouth Regional Urgent Care</a></h4>
+									<div class="claim-info">
+										<p><strong>Service:</strong> Nov 24, 2015</p>
+										<p><strong>Claim Total:</strong> $300</p>
+									</div>
+								</div>
+								<div class="claim-note">
+									<p>We need further information before we can settle this claim.<a href="#" class="standalone icon-r arrow-r">Please fill in a Coordination of Benefits form</a></p>
+								</div>
+							</div>
+							<div class="hphc-activity_card complete hide">
+								<div class="status-bar">
+									<p>Complete</p>
+									<p>Claim</p>
+								</div>
+								<div class="activity-review">
+									<p class="bold">Jim</p>
+									<h4><a href="#">Families First PCP</a></h4>
+									<div class="claim-info">
+										<p><strong>Service:</strong> Oct 24, 2015</p>
+										<p><strong>Copay:</strong> $25</p>
+									</div>
+								</div>
+								<div class="claim-note">
+									<p>You do not owe any additional payments.</p>
+								</div>
+							</div>
+							<div class="hphc-activity_card complete hide">
+								<div class="status-bar">
+									<p>Complete</p>
+									<p>Claim</p>
+								</div>
+								<div class="activity-review">
+									<p class="bold">Joanne</p>
+									<h4><a href="#">Lahey Physio Department</a></h4>
+									<div class="claim-info">
+										<p><strong>Service:</strong> Nov 24, 2015</p>
+										<p><strong>Claim Total:</strong> $300</p>
+									</div>
+								</div>
+								<div class="claim-note">
+									<p>Provider is out of network. For more info, start a <a href="#">LiveChat with Member Services.</a></p>
+								</div>
+							</div>
+							<div class="hphc-activity_card complete hide">
+								<div class="status-bar">
+									<p>Complete</p>
+									<p>Pharmacy</p>
+								</div>
+								<div class="activity-review">
+									<p class="bold">Jim</p>
+									<h4><a href="#">CVS 800 Islington</a></h4>
+									<div class="claim-info">
+										<p><strong>Service:</strong> Oct 24, 2015</p>
+										<p><strong>Copay:</strong> $25</p>
+									</div>
+								</div>
+								<div class="claim-note">
+									<p>You do not owe any additional payments.</p>
+								</div>
+							</div>
+							<div class="hphc-activity_card received hide">
+								<div class="status-bar">
+									<p>Received</p>
+									<p>Referral</p>
+								</div>
+								<div class="activity-review">
+									<p class="bold">Joanne</p>
+									<h4><a href="#">Lahey Opthalmology</a></h4>
+									<div class="claim-info">
+										<p><strong>Submitted:</strong> Nov 24, 2015</p>
+									</div>
+								</div>
+								<div class="claim-note">
+									<p>Authorization submitted by Dr. Nancy Drew.</p>
+								</div>
+							</div>
+							<div class="hphc-activity_card progress hide">
+								<div class="status-bar">
+									<p>In Progress</p>
+									<p>Claim</p>
+								</div>
+								<div class="activity-review">
+									<p class="bold">Joanne</p>
+									<h4><a href="#">Lahey Physio Department</a></h4>
+									<div class="claim-info">
+										<p><strong>Service:</strong> Nov 24, 2015</p>
+										<p><strong>Claim Total:</strong> $300</p>
+									</div>
+								</div>
+								<div class="claim-note">
+									<p>Provider is out of network. For more info, start a <a href="#">LiveChat with Member Services.</a></p>
+								</div>
+							</div>
+							<div class="hphc-activity_card action hide">
+								<div class="status-bar">
+									<p>Action needed</p>
+									<p>Claim</p>
+								</div>
+								<div class="activity-review">
+									<p class="bold">George</p>
+									<h4><a href="#">Portsmouth Regional Urgent Care</a></h4>
+									<div class="claim-info">
+										<p><strong>Service:</strong> Nov 24, 2015</p>
+										<p><strong>Claim Total:</strong> $300</p>
+									</div>
+								</div>
+								<div class="claim-note">
+									<p>We need further information before we can settle this claim.<a href="#" class="standalone icon-r arrow-r">Please fill in a Coordination of Benefits form</a></p>
+								</div>
+							</div>
+							<div class="hphc-activity_card complete hide">
+								<div class="status-bar">
+									<p>Complete</p>
+									<p>Claim</p>
+								</div>
+								<div class="activity-review">
+									<p class="bold">Jim</p>
+									<h4><a href="#">Families First PCP</a></h4>
+									<div class="claim-info">
+										<p><strong>Service:</strong> Oct 24, 2015</p>
+										<p><strong>Copay:</strong> $25</p>
+									</div>
+								</div>
+								<div class="claim-note">
+									<p>You do not owe any additional payments.</p>
+								</div>
+							</div>
+							<div class="hphc-activity_card complete hide">
+								<div class="status-bar">
+									<p>Complete</p>
+									<p>Claim</p>
+								</div>
+								<div class="activity-review">
+									<p class="bold">Joanne</p>
+									<h4><a href="#">Lahey Physio Department</a></h4>
+									<div class="claim-info">
+										<p><strong>Service:</strong> Nov 24, 2015</p>
+										<p><strong>Claim Total:</strong> $300</p>
+									</div>
+								</div>
+								<div class="claim-note">
+									<p>Provider is out of network. For more info, start a <a href="#">LiveChat with Member Services.</a></p>
+								</div>
+							</div>
+							<div class="hphc-activity_card complete hide">
+								<div class="status-bar">
+									<p>Complete</p>
+									<p>Pharmacy</p>
+								</div>
+								<div class="activity-review">
+									<p class="bold">Jim</p>
+									<h4><a href="#">CVS 800 Islington</a></h4>
+									<div class="claim-info">
+										<p><strong>Service:</strong> Oct 24, 2015</p>
+										<p><strong>Copay:</strong> $25</p>
+									</div>
+								</div>
+								<div class="claim-note">
+									<p>You do not owe any additional payments.</p>
+								</div>
+							</div>
+							<div class="hphc-activity_card received hide">
+								<div class="status-bar">
+									<p>Received</p>
+									<p>Referral</p>
+								</div>
+								<div class="activity-review">
+									<p class="bold">Joanne</p>
+									<h4><a href="#">Lahey Opthalmology</a></h4>
+									<div class="claim-info">
+										<p><strong>Submitted:</strong> Nov 24, 2015</p>
+									</div>
+								</div>
+								<div class="claim-note">
+									<p>Authorization submitted by Dr. Nancy Drew.</p>
+								</div>
+							</div>
+							<div class="hphc-activity_card progress hide">
+								<div class="status-bar">
+									<p>In Progress</p>
+									<p>Claim</p>
+								</div>
+								<div class="activity-review">
+									<p class="bold">Joanne</p>
+									<h4><a href="#">Lahey Physio Department</a></h4>
+									<div class="claim-info">
+										<p><strong>Service:</strong> Nov 24, 2015</p>
+										<p><strong>Claim Total:</strong> $300</p>
+									</div>
+								</div>
+								<div class="claim-note">
+									<p>Provider is out of network. For more info, start a <a href="#">LiveChat with Member Services.</a></p>
+								</div>
+							</div>
+							<a id="load-more" href="#" class="label red icon-r carat-d" role="button">Load Next 6</a>
+						</div>
+				</section>
+
+				<section>
+						<section id="deductibles">
+							<div class="hphc-header_tabbed">
+								<div>
+									<h3>Deductibles</h3>
+									<div>
+										<p class="mobile_show"><a href="#" class="switch-view" role="button">Switch View to Out of Pocket Max</a></p>
+										<p class="mobile_hide bold active"><a href="#" class="switch-view">Deductibles</a></p>
+										<p class="mobile_hide bold"><a href="#" class="switch-view">Out of Pocket Max</a></p>
+									</div>
+								</div>
+								<a href="#" class="standalone--sm icon-r arrow-r">Help me understand deductibles</a>
+							</div>
+							<div class="hphc-meter-wrapper">	
+								<div class="meter-row">
+									<p class="row-title bold">Family</p>
+									<div class="meter">
+										<div class="meter-label">
+											<p class="small">Medical</p>
+											<p class="small">$12,000</p>
+										</div>
+										<div class="meter-bar ninety">
+											<p class="bold small">$1,444 Remaining</p>
+										</div>
+									</div>
+									<div class="meter">
+										<div class="meter-label">
+											<p class="small">Prescription</p>
+											<p class="small">$500</p>
+										</div>
+										<div class="meter-bar half">
+											<p class="bold small">$250 Remaining</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="hphc-meter-wrapper">
+								<div class="meter-row">
+									<p class="row-title bold">Jill</p>
+									<div class="meter">
+										<div class="meter-label">
+											<p class="small">Medical</p>
+											<p class="small">$7,000</p>
+										</div>
+										<div class="meter-bar seven">
+											<p class="bold small">$6,500 Remaining</p>
+										</div>
+									</div>
+									<div class="meter">
+										<div class="meter-label">
+											<p class="small">Prescription</p>
+											<p class="small">$350</p>
+										</div>
+										<div class="meter-bar">
+											<p class="bold small">$350 Remaining</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="meter-row">
+									<p class="row-title bold">Jim</p>
+									<div class="meter">
+										<div class="meter-label">
+											<p class="small">Medical</p>
+											<p class="small">$7,000</p>
+										</div>
+										<div class="meter-bar seventy-eight">
+											<p class="bold small">$1,500 Remaining</p>
+										</div>
+									</div>
+									<div class="meter">
+										<div class="meter-label">
+											<p class="small">Prescription</p>
+											<p class="small">$350</p>
+										</div>
+										<div class="meter-bar excluded">
+											<p class="bold small">Not In Plan</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="meter-row note">
+									<p class="row-title bold">George</p>
+									<div class="meter">
+										<div class="meter-label">
+											<p class="small">Medical</p>
+											<p class="small">$7,000</p>
+										</div>
+										<div class="meter-bar full">
+											<p class="bold small">You've met your medical deductible</p>
+										</div>
+									</div>
+									<div class="meter">
+										<div class="meter-label">
+											<p class="small">Prescription</p>
+											<p class="small">$350</p>
+										</div>
+										<div class="meter-bar fourteen">
+											<p class="bold small">$300 Remaining</p>
+										</div>
+									</div>
+									<div class="row-note">
+										<p class="small">On future medical services you will pay a co-pay, and your 20% coinsurance costs until the remaining $1400 out of pocket max is met.</p>
+									</div>
+								</div>
+
+								<div class="meter-row">
+									<p class="row-title bold">Sally</p>
+									<div class="meter">
+										<div class="meter-label">
+											<p class="small">Medical</p>
+											<p class="small">$7,000</p>
+										</div>
+										<div class="meter-bar">
+											<p class="bold small">$7,000 Remaining</p>
+										</div>
+									</div>
+									<div class="meter">
+										<div class="meter-label">
+											<p class="small">Prescription</p>
+											<p class="small">$350</p>
+										</div>
+										<div class="meter-bar sixty">
+											<p class="bold small">$110 Remaining</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="hide" id="outofpocket">
+							<div class="hphc-header_tabbed">
+								<div>
+									<h3>Out of Pocket Maximum</h3>
+									<div>
+										<p class="mobile_show"><a href="#" class="switch-view" role="button">Switch View to Deductibles</a></p>
+										<p class="mobile_hide bold active"><a href="#" class="switch-view">Deductibles</a></p>
+										<p class="mobile_hide bold"><a href="#" class="switch-view">Out of Pocket Max</a></p>
+									</div>
+								</div>
+								<a href="#" class="standalone--sm icon-r arrow-r">Help me understand out of pocket max</a>
+							</div>
+							<div class="hphc-meter-wrapper">	
+								<div class="meter-row">
+									<p class="row-title bold">Family</p>
+									<div class="meter">
+										<div class="meter-label">
+											<p class="small hidden">Medical</p>
+											<p class="small">$14,000</p>
+										</div>
+										<div class="meter-bar eighty">
+											<p class="bold small">$1,765 Remaining</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="hphc-meter-wrapper">
+								<div class="meter-row">
+									<p class="row-title bold">Jill</p>
+									<div class="meter">
+										<div class="meter-label">
+											<p class="small hidden">Medical</p>
+											<p class="small">$12,000</p>
+										</div>
+										<div class="meter-bar thirty">
+											<p class="bold small">$8,000 Remaining</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="meter-row">
+									<p class="row-title bold">Jim</p>
+									<div class="meter">
+										<div class="meter-label hidden">
+											<p class="small">Medical</p>
+											<p class="small">$12,000</p>
+										</div>
+										<div class="meter-bar eighty">
+											<p class="bold small">$1,700 Remaining</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="meter-row">
+									<p class="row-title bold">George</p>
+									<div class="meter">
+										<div class="meter-label hidden">
+											<p class="small">Medical</p>
+											<p class="small">$12,000</p>
+										</div>
+										<div class="meter-bar full">
+											<p class="bold small">You've met your out of pocket maximum</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="meter-row">
+									<p class="row-title bold">Sally</p>
+									<div class="meter">
+										<div class="meter-label hidden">
+											<p class="small">Medical</p>
+											<p class="small">$12,000</p>
+										</div>
+										<div class="meter-bar">
+											<p class="bold small">$12,000 Remaining</p>
+										</div>
+									</div>
+								</div>
+							</div>				
+						</section>
+				</section>
+				<section class="hphc-info tan-block">
+					<h3>Recommendations for You</h3>
+					<div class="hphc-grid">
+						<div>
+							<h4>Get Cheaper MRIs</h4>
+							<p>Your <strong>last MRI cost $15,000</strong> (after insurance $1,200). Did you know that other facilities offer cheaper prices, even <strong>as low as $200</strong>? Ask your provider about high value, low priced options near you.</p>
+							<p><a href="#" class="standalone icon-r arrow-r">See MRI options</a></p>
+						</div>
+						<div>
+							<h4>Fitness Reimbursement</h4>
+							<p>You only have <strong>17 days</strong> left to claim your fitness reimbursement. Fill out the form and get paid back up to $150 for your gym membership.</p>
+							<p><a href="#" class="standalone icon-r arrow-r">Start reimbursement</a></p>
+						</div>
+						<div>
+							<h4>Go Paperless</h4>
+							<p>Make your bill payment quicker, easier, and more accurate with online billing.</p>
+							<p><a href="#" class="standalone icon-r arrow-r">Set up Go Paperless</a></p>
+						</div>
+					</div>
+					<h3>Get the Most Out of Your Insurance</h3>
+					<div class="hphc-grid">
+						<div>
+							<h4>Classes &amp; Programs</h4>
+							<p>Take advantage of our member programs to speak with health professionals, manage chronic conditions, or learn meditation. They're all part of practicing wellness in your life.</p>
+							<p><a href="#" class="standalone icon-r arrow-r">See All Classes &amp; Programs</a></p>
+						</div>
+						<div>
+							<h4>Discounts &amp; Savings</h4>
+							<p>Did you know Harvard Pilgrim can save you money on more than just insurance? Get savings at your favorite stores, and on great services!</p>
+							<p><a href="./discounts-savings/" class="standalone icon-r arrow-r">Find Discounts &amp; Savings</a></p>
+						</div>
+						<div>
+							<h4>Learn How Insurance Works</h4>
+							<p>Make the most of your plan. Learn the lingo, understand your benefits, and get answers to all your questions.</p>
+							<p><a href="#" class="standalone icon-r arrow-r">Start learning</a></p>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer>
+				<div class="hphc-contact">
+						<h2>Contact Member Services</h2>
+						<div>
+							<a href="tel:888-333-4742" class="standalone icon-l phone">(888) 333-4742</a>
+							<a href="mailto:info@harvardpilgrim.org" class="hphc-btn_tertiary icon-l email">Email</a>
+							<a href="#" class="hphc-btn_tertiary icon-l comments">Live Chat</a>
+						</div>
+				</div>
+				<div class="hphc-sitemap logged-in">
+						<div>
+							<h4>Your Plan Details</h4>
+							<div class="links">
+								<ul>
+									<li><a href="./member-dashboard.html">My Dashboard</a></li>
+									<li><a href="#">HPHC Connect</a></li>
+									<li><a href="./conditions-coverages/">Conditions &amp; Coverage</a></li>
+									<li><a href="./classes-programs/">Classes &amp; Programs</a></li>
+									<li><a href="./discounts-savings/">Discounts &amp; Savings</a></li>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<h4>Top Tasks</h4>
+							<div class="links">
+								<ul>
+									<li><a href="./find-a-provider/">Find a provider</a></li>
+									<li><a href="./discounts-savings/pharmacy-benefits.html">Look up a drug</a></li>
+									<li><a href="#">Order ID card</a></li>
+									<li><a href="#">Fill out tax and claims forms</a></li>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<h4>About Us</h4>
+							<div class="links">
+								<ul>
+									<li><a href="#">Careers</a></li>
+									<li><a href="./newsroom/">Newsroom</a></li>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<div class="links">
+								<ul>
+									<li><a href="./member-login.html" class="label icon-r arrow-r">Logout</a></li>
+									<li><a href="#" class="label icon-r arrow-r">Help</a></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+				<div class="hphc-copyright">
+						<p>&copy;2016 Harvard Pilgrim Health Care, Inc. All rights reserved.</p>
+						<p><a href="#">Privacy and Disclaimer Statements</a></p>
+				</div>
+			</footer>
+		</div>
+		
+	<!-- Scripts -->
+	<script src="./_js/_vendors/jquery/jquery-2.1.4.min.js"></script>
+	<script src="./_js/_vendors/jquery/jquery-ui.min.js"></script>
+	<script src="./_js/_vendors/select2/select2.full.min.js"></script>
+	<script src="./_js/main.js"></script>
+
+	</body>
+</html>

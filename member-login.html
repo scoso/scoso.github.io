@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Harvard Pilgrim Health Care | Member Login</title>
+	    <link rel='shortcut icon' href='apple-touch-icon.ico' type='image/x-icon'/ >
+	    <link rel="apple-touch-icon" href="./_img/apple-touch-icon_60.png">
+			<link rel="apple-touch-icon" sizes="76x76" href="./_img/apple-touch-icon_76.png">
+			<link rel="apple-touch-icon" sizes="120x120" href="./_img/apple-touch-icon_120.png">
+			<link rel="apple-touch-icon" sizes="152x152" href="./_img/apple-touch-icon_152.png">
+	    <link rel="stylesheet" href="./_css/_vendors/normalize.css">
+	    <link rel="stylesheet" href="./_css/_vendors/jquery-ui.min.css">
+	    <link rel="stylesheet" href="./_css/_vendors/select2/select2.min.css">
+	    <link rel="stylesheet" href="./_css/style.min.css">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<h1 class="skip-link"><a href="#maincontent">Skip to main content</a></h1>
+
+		<div class="hphc-wrap_page">
+			<nav role="navigation" aria-label="Global links">
+				<div class="hphc-main_nav"> 
+					<a href="./find-a-provider/">Find A Provider</a>
+					<a href="#">Contact</a>
+					<a href="#">About Us</a>
+					<a href="#">Help</a>
+					<div class="search-container">
+						<form class="searchbox">
+							<input type="text" placeholder="Type to search..." name="search" class="searchbox-input">
+							<input type="submit" class="searchbox-submit" value="GO">
+						</form>
+					</div>
+					<a href="#" id="search-bar" class="icon-l search" role="button"><span class='screen-reader-text'>Search website</span></a>
+				</div>
+				<div class="hphc-sub_nav"> 
+					<div class="mobile_nav"> 
+						<a href="#" role="button" id="show-menu">Menu<span></span></a>
+						<div class="mobile_menu hide">
+							<div>
+								<a href="./health-care-plans/">Browse Our Plans</a>
+								<a href="#">Why Choose Us?</a>
+							</div>
+							<div>
+								<a href="./find-a-provider/">Find A Provider</a>
+								<a href="#">Contact</a>
+								<a href="#">About Us</a>
+								<a href="#">Help</a>
+							</div>
+						</div>
+						<a href="./" class="hphc-logo"><img src="./_img/HPHC_logo.svg" alt="Harvard Pilgrim Health Care logo"/></a>
+						<a href="#" id="show-search" class="icon-l search" role="button"><span class='screen-reader-text'>Search website</span></a>
+						<div id="mobile_search" class="hide">
+							<form class="mobile_searchbox">
+								<input type="text" placeholder="Type to search..." name="search" class="mobile_searchbox-input">
+								<input type="submit" class="mobile_searchbox-submit">
+							</form>
+						</div>
+					</div>
+					<a href="./" class="hphc-logo"><img src="./_img/HPHC_logo.svg" alt="Harvard Pilgrim Health Care logo"/></a>
+					<div>
+						<a href="./health-care-plans/">Browse Our Plans</a>
+						<a href="#">Why Choose Us?</a>
+						<a href="./member-login.html" class="hphc-btn_tertiary" role="link">Member Login</a>
+					</div>
+				</div>
+			</nav>
+			
+			<main role="main" id="maincontent">
+				<section class="hphc-snapshot--login">
+					<div>
+						<h1 class="title">Log in to Harvard Pilgrim</h1>
+						<div>
+							<form action="./member-dashboard.html">
+								<div>
+									<label for="username">Username or email</label>
+									<input type="text" id="username" />
+								</div>
+								<div>
+									<label for="password">Password</label>
+									<input type="password" id="password" name="password" class="showpassword">
+									<button class="hphc-btn_link" id="showpass">Show password <span class="screen-reader-text">– this unmasks the password for mobile users</span></button>
+								</div>					
+								<button type="submit" class="hphc-btn_primary">Log in</button>
+								<a href="#" class="standalone">Forgot password or username?</a>
+							</form>
+						</div>
+					</div>
+					<div>
+						<h4>New member? Register Now!</h4>
+						<p><a href="#">Create an online account</a> to see your personal health information.</p>
+					</div>
+				</section>
+
+				<section class="hphc-info tan-block">
+					<div class="hphc-grid">
+						<div>
+							<h4>Not yet a member?</h4>
+							<p>Find out about <a href="./health-care-plans/">our plans</a> or <a href="#">get a quote.</a></p>
+						</div>
+						<div>
+							<h4>Need help?</h4>
+							<p>Member services is here to help, via <a href="tel:888-123-1234"></a>phone</a> (888-123-1234), or <a href="#">livechat</a>.</p>
+						</div>
+					</div>
+				</section>
+			</main>
+		
+			<footer>
+				<div class="hphc-contact">
+					<h2>Contact Member Services</h2>
+					<div>
+						<a href="tel:888-333-4742" class="standalone icon-l phone">(888) 333-4742</a>
+						<a class="hphc-btn_tertiary icon-l email">Email</a>
+						<a class="hphc-btn_tertiary icon-l comments">Live Chat</a>
+					</div>
+				</div>
+				<div class="hphc-sitemap">
+					<div>
+						<h4>Your Plan Details (Log In Required)</h4>
+						<div class="links">
+							<ul>
+								<li><a href="./member-dashboard.html">My Dashboard</a></li>
+								<li><a href="./conditions-coverages/">Conditions &amp; Coverage</a></li>
+								<li><a href="./classes-programs/">Classes &amp; Programs</a></li>
+								<li><a href="./discounts-savings/">Discounts &amp; Savings</a></li>
+							</ul>
+						</div>
+					</div>
+					<div>
+						<h4>Top Tasks</h4>
+						<div class="links">
+							<ul>
+								<li><a href="./find-a-provider/">Find a provider</a></li>
+								<li><a href="./discounts-savings/pharmacy-benefits.html">Look up a drug</a></li>
+								<li><a href="#">Order ID card</a></li>
+								<li><a href="#">Fill out tax and claims forms</a></li>
+							</ul>
+						</div>
+					</div>
+					<div>
+						<h4>About Us</h4>
+						<div class="links">
+							<ul>
+								<li><a href="#">Careers</a></li>
+								<li><a href="./newsroom/">Newsroom</a></li>
+							</ul>			
+						</div>
+					</div>
+					<div>
+						<h4>Switch Sites</h4>
+						<div class="links">
+							<ul>
+								<li><a href="#">For Providers</a></li>
+								<li><a href="#">For Employers</a></li>
+								<li><a href="#">For Brokers</a></li>
+							</ul>	
+						</div>
+					</div>
+				</div>
+				<div class="hphc-copyright">
+					<p>&copy;2016 Harvard Pilgrim Health Care, Inc. All rights reserved.</p>
+					<p><a href="#">Privacy and Disclaimer Statements</a></p>
+				</div>
+			</footer>	
+		</div>
+		
+	<!-- Scripts -->
+	<script src="./_js/_vendors/jquery/jquery-2.1.4.min.js"></script>
+	<script src="./_js/_vendors/jquery/jquery-ui.min.js"></script>
+	<script src="./_js/_vendors/select2/select2.full.min.js"></script>
+	<script src="./_js/main.js"></script>
+
+	</body>
+</html>
